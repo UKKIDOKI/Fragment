@@ -39,10 +39,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                 Fragment2 fragment2 = new Fragment2();
-                transaction.replace(R.id.frame,fragment2);
-                transaction.commit();
+               getSupportFragmentManager().beginTransaction().replace(R.id.frame,fragment2).commit();
+
 
             }
         });
